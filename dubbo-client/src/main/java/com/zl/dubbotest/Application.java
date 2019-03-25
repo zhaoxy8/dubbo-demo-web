@@ -9,7 +9,7 @@ import com.zl.dubbotest.action.HelloAction;
 @SpringBootApplication
 public class Application {
     public static void main( String[] args) {
-    	ApplicationContext context=SpringApplication.run("classpath:spring-config.xml",args);
+    	ApplicationContext context=SpringApplication.run("classpath*:spring-config.xml",args);
     	HelloAction action=(HelloAction) context.getBean("helloAction");
         System.out.println("Dubbo client started");
         action.say("jack");
