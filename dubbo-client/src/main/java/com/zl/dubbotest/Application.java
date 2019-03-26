@@ -12,8 +12,9 @@ public class Application {
     	ApplicationContext context=SpringApplication.run("classpath*:spring-config.xml",args);
     	HelloAction action=(HelloAction) context.getBean("helloAction");
         System.out.println("Dubbo client started");
-        action.say("jack");
-        action.say("tom");
-        action.say("jim");
+        System.out.println("Dubbo 消费者端启动");
+        //action.say("jack");
+        //action.say("tom");
+        //action.say("jim");
     }
 }
