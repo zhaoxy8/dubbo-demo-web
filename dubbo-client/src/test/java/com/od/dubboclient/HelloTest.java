@@ -1,4 +1,4 @@
-package com.zl.dubboclient;
+package com.od.dubboclient;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;

@@ -1,10 +1,10 @@
-package com.zl.dubbotest;
+package com.od.dubbotest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import com.zl.dubbotest.action.HelloAction;
+import com.od.dubbotest.action.HelloAction;
 
 @SpringBootApplication
 public class Application {
