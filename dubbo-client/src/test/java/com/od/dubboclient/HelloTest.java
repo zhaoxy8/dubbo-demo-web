@@ -20,7 +20,7 @@ public class HelloTest {
 
 	@Before
 	public void setUp() throws Exception {
-		this.url = new URL("http://localhost:9090/hello?name={name}");
+		this.url = new URL("http://localhost:8080/hello?name={name}");
 		rest = new TestRestTemplate();
 	}
 
