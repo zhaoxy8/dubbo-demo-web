@@ -5,10 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.od.dubbotest.api.HelloService;
-import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 
-
-@ApolloConfig
 @RestController
 @RequestMapping(value="/hello")
 public class HelloAction {
