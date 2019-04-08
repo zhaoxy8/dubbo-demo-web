@@ -3,12 +3,10 @@ package com.od.dubbotest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 import com.od.dubbotest.action.HelloAction;
 
-@SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class Application {
     public static void main( String[] args) {
     	ApplicationContext context=SpringApplication.run("classpath*:spring-config.xml",args);
