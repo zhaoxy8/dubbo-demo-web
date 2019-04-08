@@ -16,7 +16,7 @@ public class HelloAction {
 	
 	@RequestMapping
 	public String say(String name) {
-		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
 		String ds = df.format(new Date());
 		System.out.println(ds + "HelloAction接收到请求:"+name);
 		String str = ds + "<h1>这是Dubbo 消费者端</h1>";
