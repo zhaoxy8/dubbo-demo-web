@@ -1,5 +1,6 @@
 package com.od.dubbotest;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 import com.od.dubbotest.Application;
 
