@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.od.dubbotest.api.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.ctrip.framework.apollo.spring.annotation.ApolloConfig;
+import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 
 
 @ApolloConfig
