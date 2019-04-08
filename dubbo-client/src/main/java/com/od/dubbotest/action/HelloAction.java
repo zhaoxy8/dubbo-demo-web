@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.od.dubbotest.api.HelloService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping(value="/hello")
 public class HelloAction {
 	
-	@Reference HelloService helloService;
+	@Autowired HelloService helloService;
 	
 	@RequestMapping
 	public String say(String name) {
