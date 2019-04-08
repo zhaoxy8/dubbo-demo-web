@@ -28,6 +28,6 @@
     <dubbo:registry address="${dubbo.registry}" />  
   
     <!-- 生成远程服务代理，可以像使用本地bean一样使用demoService -->
-    <dubbo:reference id="helloService" interface="com.od.dubbotest.api.HelloService" />
+    <dubbo:reference check="true" id="helloService" interface="com.od.dubbotest.api.HelloService" />
     
 </beans>
