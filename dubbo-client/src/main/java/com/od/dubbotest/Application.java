@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ImportResource;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.od.dubbotest.action.HelloAction;
