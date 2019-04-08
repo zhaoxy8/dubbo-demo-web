@@ -5,13 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.ImportResource;
 
 import com.od.dubbotest.action.HelloAction;
 
 @ImportResource(value={"classpath*:spring-config.xml"})
-@EnableApolloConfig
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class Application {
