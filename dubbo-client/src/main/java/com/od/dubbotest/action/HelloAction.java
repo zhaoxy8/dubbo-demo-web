@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.od.dubbotest.api.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 
 
@@ -14,7 +13,7 @@ import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 @RequestMapping(value="/hello")
 public class HelloAction {
 	
-	@Autowired HelloService helloService;
+	@Reference HelloService helloService;
 	
 	@RequestMapping
 	public String say(String name) {
