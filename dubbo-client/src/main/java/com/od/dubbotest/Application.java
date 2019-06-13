@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.od.dubbotest.action.HelloAction;
-import com.od.dubbotest.action.BjAction;
 
 @SpringBootApplication
 public class Application {
