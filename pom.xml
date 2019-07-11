@@ -32,6 +32,6 @@
 				<pom.logng.facility>LOCAL5</pom.logng.facility>
 			  <pom.jvm.mem-opts />
       </properties>
-		</profile>
-	</profiles>
+    </profile>
+  </profiles>
 </project>
