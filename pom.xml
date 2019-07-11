@@ -19,5 +19,19 @@
     <module>dubbo-api</module>
 	<module>dubbo-client</module>
   </modules>
-	
+  <profiles>
+	  <profile>
+			<id>tomcat</id>
+			<properties>
+				<pom.log.log4j-xml>log4j.xml</pom.log.log4j-xml>
+				<pom.log.dir>/opt/tomcat/logs</pom.log.dir>
+				<pom.log.file>/opt/tomcat/logs/dubbo-demo-web.log</pom.log.file>
+				<pom.log.stdout-file>dubbo-demo-web-stdout.log</pom.log.stdout-file>
+				<pom.log.root-level>INFO</pom.log.root-level>
+				<pom.log.root-appender>file-log</pom.log.root-appender>
+				<pom.logng.facility>LOCAL5</pom.logng.facility>
+			  <pom.jvm.mem-opts />
+      </properties>
+		</profile>
+	</profiles>
 </project>
