@@ -7,7 +7,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.od.dubbotest.api.HelloService;
 
 @RestController
-@RequestMapping(value="/sh")
+@RequestMapping(value="/bj")
 public class BjAction {
 	
 	@Reference HelloService helloService;
