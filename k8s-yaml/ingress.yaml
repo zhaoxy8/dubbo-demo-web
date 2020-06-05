@@ -1,0 +1,14 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata: 
+  name: dubbo-demo-consumer
+  namespace: app
+spec:
+  rules:
+  - host: demo.od.com
+    http:
+      paths:
+      - path: /
+        backend: 
+          serviceName: dubbo-demo-consumer
+          servicePort: 8080
