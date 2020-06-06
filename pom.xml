@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>demo</name>
+  <name>dubbo-demo-web</name>
   <url>http://maven.apache.org</url>
 
   <properties>
