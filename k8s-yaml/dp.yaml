@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: dubbo-demo-consumer
-        image: registry.cn-hangzhou.aliyuncs.com/infra-xyzhao/dubbo-demo-consumer:apollo_20200606_1623
+        image: registry.cn-hangzhou.aliyuncs.com/infra-xyzhao/dubbo-demo-consumer:apollo_20200606_1632
         ports:
         - containerPort: 8080
           protocol: TCP
