@@ -17,12 +17,12 @@ public class ShAction {
 
 	public String say(String name) {
                 Logger logger= Logger.getLogger("com"); 
-		logger.log(Level.INFO, "HelloAction接收到请求:", name);
+		logger.log(Level.INFO, "HelloAction接收到请求:{0}" , name);
 		String str = "<h1>这是Dubbo 消费者端(springboot)</h1>";
 		str += "<h2>这里是上海站的页面</h2>";
                 str+="<h2>这里是上海站新加入的功能，灰度测试</h2>";
 		str += helloService.hello(name);
-		logger.log(Level.INFO, "HelloService返回到结果:", str);
+		logger.log(Level.INFO, "HelloService返回到结果:{0}", str);
 		return str;
 	}
 }

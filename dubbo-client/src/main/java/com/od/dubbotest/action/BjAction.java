@@ -15,12 +15,12 @@ public class BjAction {
 	@RequestMapping
 	public String say(String name) {
 	        Logger logger = Logger.getLogger("com");
-		logger.log(Level.INFO, "HelloAction接收到请求:" + name);
+		logger.log(Level.INFO, "HelloAction接收到请求:{0}", name);
 		String str = "<h1>这是Dubbo 消费者端(springboot)</h1>";
 		str += "<h2>这里是北京站的页面</h2>";
         str+="<h2>这里是北京站新加入的功能，上海灰度测试后投产。</h2>";
 		str += helloService.hello(name);
-		logger.log(Level.INFO, "HelloService返回到结果:" + str);
+		logger.log(Level.INFO, "HelloService返回到结果:{0}", str);
 		return str;
 	}
 }
