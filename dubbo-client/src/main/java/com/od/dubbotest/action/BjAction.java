@@ -4,7 +4,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.od.dubbotest.api.HelloService;
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 @RestController
 @RequestMapping(value="/bj")
 public class BjAction {

@@ -8,7 +8,8 @@ import com.od.dubbotest.api.HelloService;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping(value="/hello")
