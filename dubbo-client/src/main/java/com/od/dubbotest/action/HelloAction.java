@@ -19,9 +19,8 @@ public class HelloAction {
 	@Reference HelloService helloService;
 	
 	@RequestMapping
-	private static final Logger log = LoggerFactory.getLogger(HelloAction.class);
 	public String say(String name) {
-                Logger log = Logger.getLogger("com");
+	        Logger log = LoggerFactory.getLogger(HelloAction.class);
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
 		String ds = df.format(new Date());
                 log.info(ds + "HelloAction接收到请求:" + name);
