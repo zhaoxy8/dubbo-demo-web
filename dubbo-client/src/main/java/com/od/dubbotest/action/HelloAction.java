@@ -18,6 +18,7 @@ public class HelloAction {
 	@Reference HelloService helloService;
 	
 	@RequestMapping
+	private static final Logger log = LoggerFactory.getLogger(HelloAction.class);
 	public String say(String name) {
                 Logger log = Logger.getLogger("com");
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");

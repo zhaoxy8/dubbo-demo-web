@@ -14,8 +14,8 @@ public class ShAction {
 	@Reference HelloService helloService;
 	
 	@RequestMapping
+        private static final Logger log = LoggerFactory.getLogger(ShAction.class);
 	public String say(String name) {
-		Logger log = Logger.getLogger("com");
 		log.info("HelloAction接收到请求:" + name);
 		String str = "<h1>这是Dubbo 消费者端(springboot)</h1>";
 		str += "<h2>这里是上海站的页面</h2>";
