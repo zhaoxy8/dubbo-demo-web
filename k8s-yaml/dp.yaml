@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: dubbo-demo-consumer
-        image: registry.cn-hangzhou.aliyuncs.com/infra-xyzhao/dubbo-demo-consumer:apollo_20200606_1734
+        image: registry.cn-hangzhou.aliyuncs.com/infra-xyzhao/dubbo-demo-consumer:apollo_20200606_1623
         ports:
         - containerPort: 8080
           protocol: TCP
@@ -29,7 +29,7 @@ spec:
           value: dubbo-client.jar
         - name: C_OPTS
           value: -Denv=dev -Dapollo.meta=http://apolloconfig-dev-int.int
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
       imagePullSecrets:
       - name: ali-secret
       restartPolicy: Always
