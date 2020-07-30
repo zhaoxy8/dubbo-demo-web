@@ -15,6 +15,13 @@ spec:
       labels: 
         app: dubbo-demo-consumer
         name: dubbo-demo-consumer
+      annotations:
+        prometheus_io_scrape: "true"
+        prometheus_io_path: "/"
+        prometheus_io_port: "12346"
+        blackbox_path: "/hello"
+        blackbox_port: "8080"
+        blackbox_scheme: "http"
     spec:
       containers:
       - name: dubbo-demo-consumer
