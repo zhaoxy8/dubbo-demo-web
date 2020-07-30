@@ -20,8 +20,8 @@ public class Application {
     	HelloAction action=(HelloAction) context.getBean("helloAction");
         BjAction bjAction=(BjAction) context.getBean("bjAction");
         ShAction shAction=(ShAction) context.getBean("shAction");
-        System.out.println("Dubbo client started");
-        System.out.println("Dubbo 消费者端启动");
+        System.out.println("tomcat Dubbo client started");
+        System.out.println("tomcat Dubbo 消费者端启动");
         //action.say("jack");
         //action.say("tom");
         //action.say("jim");
